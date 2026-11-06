@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вход — Contour</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='38' fill='none' stroke='%237c1c2e' stroke-width='6'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --accent: #7c1c2e; --border: #ccc; --font-body: 'Manrope', sans-serif; --font-display: 'Oswald', sans-serif; }
+    body { margin: 0; font-family: var(--font-body); display: flex; flex-direction: column; align-items: center; min-height: 100vh; background: #fff; }
+    .auth-container { width: 100%; max-width: 440px; padding: 40px 20px; display: flex; flex-direction: column; min-height: 100vh; }
+    .logo { font-family: var(--font-display); font-size: 24px; font-weight: 700; color: #1a1a1a; text-decoration: none; margin-bottom: 60px; }
+    .auth-title { font-family: var(--font-display); font-size: 48px; text-transform: uppercase; margin: 0 0 30px 0; line-height: 1; }
+    .form-group { margin-bottom: 20px; }
+    .form-group label { display: block; font-size: 14px; font-weight: 600; margin-bottom: 8px; }
+    .form-input { width: 100%; padding: 16px; border: 1px solid var(--border); border-radius: 4px; font-size: 16px; font-family: var(--font-body); box-sizing: border-box; }
+    .form-input:focus { outline: none; border-color: #1a1a1a; }
+    .btn--submit { width: 100%; padding: 18px; background: #000; color: #fff; border: none; border-radius: 4px; font-size: 16px; font-weight: 600; cursor: pointer; margin-top: 10px; }
+    .divider { display: flex; align-items: center; text-align: center; color: #999; font-size: 14px; margin: 30px 0; }
+    .divider::before, .divider::after { content: ''; flex: 1; border-bottom: 1px solid #eee; }
+    .divider span { padding: 0 15px; }
+    .btn--social { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; padding: 16px; background: #fff; border: 1px solid var(--border); border-radius: 4px; font-size: 16px; font-weight: 600; cursor: pointer; text-decoration: none; color: #1a1a1a; box-sizing: border-box; }
+    .btn--social:hover { border-color: #999; }
+    .btn--social svg { width: 24px; height: 24px; }
+    .auth-switch { text-align: center; font-size: 14px; margin-top: auto; padding-top: 40px; }
+    .auth-switch a { color: #1a1a1a; font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
+  </style>
+</head>
+<body>
+  <div class="auth-container">
+    <a href="/" class="logo">Contour</a>
+    
+    <h1 class="auth-title">Вход</h1>
+    
+    <form id="login-form">
+      <div class="form-group">
+        <label for="login-email">Email</label>
+        <input type="email" id="login-email" class="form-input" placeholder="Ваш email" required>
+      </div>
+      <button type="submit" class="btn--submit">Продолжить</button>
+    </form>
+    
+    <div class="divider"><span>Или</span></div>
+    
+    <a href="/auth/yandex" class="btn--social">
+      <svg viewBox="0 0 24 24" fill="#fc3f1d" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 21.6c-5.302 0-9.6-4.298-9.6-9.6S6.698 2.4 12 2.4s9.6 4.298 9.6 9.6-4.298 9.6-9.6 9.6z"/><path d="M12 4.8c-3.976 0-7.2 3.224-7.2 7.2s3.224 7.2 7.2 7.2 7.2-3.224 7.2-7.2-3.224-7.2-7.2-7.2zm0 12c-2.648 0-4.8-2.152-4.8-4.8s2.152-4.8 4.8-4.8 4.8 2.152 4.8 4.8-2.152 4.8-4.8 4.8z"/></svg>
+      Войти с Яндекс ID
+    </a>
+
+    <div class="auth-switch">
+      У вас ещё нет аккаунта? <a href="/auth/yandex">Зарегистрироваться</a>
+    </div>
+  </div>
+
+  <script>
+    // Обработка формы (заглушка, так как основной вход через OAuth)
+    document.getElementById('login-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Для входа используйте Яндекс ID (кнопка ниже)');
+    });
+  </script>
+</body>
+</html>

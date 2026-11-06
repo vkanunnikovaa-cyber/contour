@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contour — CRM и сайты для фотографов</title>
+  <meta name="description" content="Contour — экосистема для фотографов: CRM, онлайн-запись, галереи для клиентов и стильный сайт-портфолио. Принимайте заказы без переписки.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='38' fill='none' stroke='%237c1c2e' stroke-width='6'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="bg-blur bg-blur--1"></div>
+  <div class="bg-blur bg-blur--2"></div>
+
+  <header class="header">
+    <div class="header__inner">
+      <a href="#top" class="logo">
+        <span class="logo__mark"></span>
+        <span>Contour</span>
+      </a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="#website" class="nav__link">Сайт</a></li>
+          <li><a href="#gallery" class="nav__link">Галереи</a></li>
+          <li><a href="#booking" class="nav__link">Бронирование</a></li>
+          <li><a href="#calendar" class="nav__link">Календарь</a></li>
+          <li><a href="#pricing" class="nav__link">Тарифы</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <a href="login.html" class="btn btn--outline btn--sm">Войти</a>
+        <a href="login.html#register" class="btn btn--primary btn--sm">Попробовать</a>
+      </div>
+      <button class="burger" aria-label="Меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <div class="hero__grid">
+          <div class="hero-text reveal">
+            <h1>Контроль вашего <span>фотобизнеса</span></h1>
+            <p class="hero__sub">Создайте стильный сайт, настройте онлайн-запись и передавайте галереи клиентам. Система сама примет заказ и предоплату.</p>
+            <div class="hero__cta">
+              <a href="login.html#register" class="btn btn--primary">Начать бесплатно</a>
+              <a href="#pricing" class="btn btn--outline">Смотреть тарифы</a>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal reveal--d1">
+            <div class="dashboard-mockup">
+              <div class="dash-card">
+                <div class="dash-header">
+                  <div class="dash-title">Новая запись</div>
+                  <div class="dash-badge">Свободно</div>
+                </div>
+                <div class="dash-service">
+                  <div class="dash-service-name">Портретная съёмка</div>
+                  <div class="dash-service-price">2 500 ₽</div>
+                </div>
+                <div class="dash-times">
+                  <div class="dash-time">10:00</div>
+                  <div class="dash-time active">12:00</div>
+                  <div class="dash-time">14:00</div>
+                  <div class="dash-time">16:00</div>
+                </div>
+              </div>
+              <div class="dash-bottom">
+                <div class="dash-mini">
+                  <div>
+                    <div class="dash-mini-label">Доход за неделю</div>
+                    <div class="dash-mini-value">24 500 ₽</div>
+                  </div>
+                  <div class="dash-chart">
+                    <div style="height: 40%;"></div>
+                    <div style="height: 60%;"></div>
+                    <div style="height: 100%;"></div>
+                    <div style="height: 50%;"></div>
+                    <div style="height: 80%;"></div>
+                  </div>
+                </div>
+                <div class="dash-mini">
+                  <div>
+                    <div class="dash-mini-label">Уведомление</div>
+                    <div class="dash-notification">
+                      <div class="dash-avatar">АК</div>
+                      <div class="dash-notif-text">
+                        Анна К.<br>оплатила
+                        <span>Только что</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Всё для удобного фотобизнеса</h2>
+          <p>Четыре инструмента, которые заменяют десятки таблиц, чатов и файлообменников.</p>
+        </div>
+        <div class="bento-grid">
+          <div class="bento-card reveal">
+            <div class="bento-num">01</div>
+            <h3>Сайт</h3>
+            <p>Стильное портфолио на собственном домене. Привлекает клиентов и формирует премиальный образ.</p>
+          </div>
+          <div class="bento-card reveal reveal--d1">
+            <div class="bento-num">02</div>
+            <h3>Галереи</h3>
+            <p>Красивая передача фото и видео клиентам. Защищённые ссылки и отбор кадров.</p>
+          </div>
+          <div class="bento-card reveal reveal--d2">
+            <div class="bento-num">03</div>
+            <h3>Онлайн-запись</h3>
+            <p>Персональная страница, где клиенты сами выбирают услугу, дату и время.</p>
+          </div>
+          <div class="bento-card reveal">
+            <div class="bento-num">04</div>
+            <h3>Умный календарь</h3>
+            <p>Защита от двойного бронирования и синхронизация всех ваших съёмок.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="website" style="padding-top: 0;">
+      <div class="container">
+        <div class="detail-block reveal">
+          <div class="detail-text">
+            <div class="eyebrow">Портфолио</div>
+            <h2>Свой сайт, как у топовых фотографов</h2>
+            <p>Создайте стильный сайт-портфолио без навыков программирования. Выбирайте из готовых блоков, настраивайте шрифты и цвета, подключайте собственный домен. Сайт собирает заявки и оплаты прямо на странице.</p>
+            <ul>
+              <li>Готовые дизайнерские шаблоны и 100+ блоков</li>
+              <li>Собственный домен и SEO-настройки</li>
+              <li>Приём заявок и оплат прямо на сайте</li>
+              <li>Интеграция с галереями и CRM</li>
+            </ul>
+          </div>
+          <div class="detail-visual">
+            <div class="website-mockup">
+              <div class="browser-bar">
+                <span></span><span></span><span></span>
+                <div class="url">yourname.contour.ru</div>
+              </div>
+              <div class="website-preview">
+                <h4>Anna Ivanova</h4>
+                <p>Портретный и свадебный фотограф · Москва</p>
+                <div class="gallery-grid">
+                  <div></div><div></div><div></div>
+                  <div></div><div></div><div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="gallery" style="background: var(--bg-soft);">
+      <div class="container">
+        <div class="detail-block reverse reveal">
+          <div class="detail-text">
+            <div class="eyebrow">Передача контента</div>
+            <h2>Галереи, которые впечатляют</h2>
+            <p>Забудьте про архивы и Google Drive. Отправляйте клиентам стильные персональные галереи, где они смогут просматривать, выбирать и скачивать фотографии в исходном качестве.</p>
+            <ul>
+              <li>Высокая скорость загрузки и скачивания</li>
+              <li>Защита паролем и водяные знаки</li>
+              <li>Удобный отбор кадров клиентом</li>
+            </ul>
+          </div>
+          <div class="detail-visual">
+            <div class="visual-placeholder" style="background: var(--bg);">
+              <div class="mock-ui">
+                <div class="mock-line accent"></div>
+                <div class="mock-line short"></div>
+                <div class="mock-line" style="height: 120px;"></div>
+                <div class="mock-line short"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="booking">
+      <div class="container">
+        <div class="detail-block reveal">
+          <div class="detail-text">
+            <div class="eyebrow">Бронирование</div>
+            <h2>Онлайн-запись 24/7</h2>
+            <p>Клиенты больше не ждут ответа в мессенджере. Они заходят на вашу страницу, видят актуальные услуги, цены и свободное время, а затем мгновенно бронируют съёмку.</p>
+            <ul>
+              <li>Автоматическое создание клиента в CRM</li>
+              <li>Приём предоплаты прямо при бронировании</li>
+              <li>Мгновенное подтверждение на email</li>
+            </ul>
+          </div>
+          <div class="detail-visual">
+            <div class="visual-placeholder">
+              <div class="mock-ui">
+                <div class="mock-line short"></div>
+                <div class="mock-line" style="height: 50px; background: var(--accent-light);"></div>
+                <div class="mock-line" style="height: 50px; background: var(--accent-light);"></div>
+                <div class="mock-line short"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="calendar" style="background: var(--bg-soft);">
+      <div class="container">
+        <div class="detail-block reverse reveal">
+          <div class="detail-text">
+            <div class="eyebrow">Планирование</div>
+            <h2>Умный календарь</h2>
+            <p>Система автоматически скрывает занятые слоты. Вы больше никогда не запишете двух клиентов на одно и то же время. Все переносы и отмены синхронизируются в реальном времени.</p>
+            <ul>
+              <li>Защита от наложения бронирований</li>
+              <li>Автоматический расчёт времени с учётом буфера</li>
+              <li>Синхронизация с внешними календарями</li>
+            </ul>
+          </div>
+          <div class="detail-visual">
+            <div class="visual-placeholder" style="background: var(--bg);">
+              <div class="mock-ui" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; height: auto; padding: 2rem;">
+                <div class="mock-line" style="height: 50px; background: #eee;"></div>
+                <div class="mock-line" style="height: 50px; background: var(--accent-light);"></div>
+                <div class="mock-line" style="height: 50px; background: #eee;"></div>
+                <div class="mock-line" style="height: 50px; background: var(--accent-light);"></div>
+                <div class="mock-line" style="height: 50px; background: #eee;"></div>
+                <div class="mock-line" style="height: 50px; background: var(--accent-light);"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Преимущества</div>
+          <h2>Почему фотографам стоит выбирать нас</h2>
+          <p>Мы создали инструмент, который экономит время и помогает зарабатывать больше.</p>
+        </div>
+        <div class="why-list reveal">
+          <div class="why-row">
+            <div class="why-row-num">01</div>
+            <div class="why-row-content">
+              <h3>Свой сайт без кода</h3>
+              <p>Создайте портфолио, которое впечатляет, за один вечер. Без дизайнеров и программистов.</p>
+            </div>
+          </div>
+          <div class="why-row">
+            <div class="why-row-num">02</div>
+            <div class="why-row-content">
+              <h3>Экономия времени</h3>
+              <p>Автоматизация рутины освобождает до 10 часов в неделю. Вы занимаетесь съёмкой, а не переписками.</p>
+            </div>
+          </div>
+          <div class="why-row">
+            <div class="why-row-num">03</div>
+            <div class="why-row-content">
+              <h3>Рост конверсии</h3>
+              <p>Онлайн-запись и предоплата снижают количество «недоехавших» клиентов и пустых слотов.</p>
+            </div>
+          </div>
+          <div class="why-row">
+            <div class="why-row-num">04</div>
+            <div class="why-row-content">
+              <h3>Всё в одном месте</h3>
+              <p>Сайт, галереи, календарь, клиенты и оплаты — без десятка разрозненных сервисов.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pricing" style="background: var(--bg-soft);">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Тарифы</div>
+          <h2>Выберите свой план</h2>
+          <p>Начните бесплатно и переходите на мощный тариф, когда будете готовы.</p>
+        </div>
+        
+        <div class="pricing-grid">
+          <div class="plan reveal" style="background: var(--bg);">
+            <div class="plan__name">Старт / Free</div>
+            <p class="plan__desc">Базовые инструменты для первых заказов.</p>
+            <div class="plan__price">0 ₽</div>
+            <div class="plan__period">Бесплатно навсегда</div>
+            <ul class="plan__features">
+              <li>Онлайн-запись 24/7</li>
+              <li>Умный календарь</li>
+              <li>До 10 заказов в месяц</li>
+              <li>Базовая галерея (10 ГБ)</li>
+              <li>Сбор отзывов</li>
+              <li>Мультиязычность</li>
+              <li>Бесплатный поддомен</li>
+            </ul>
+            <a href="login.html#register" class="btn btn--outline">Начать бесплатно</a>
+          </div>
+
+          <div class="plan reveal reveal--d1" style="background: var(--bg);">
+            <div class="plan__name">Pro</div>
+            <p class="plan__desc">Для активных фотографов и роста бизнеса.</p>
+            <div class="plan__price">790 ₽ <small>/ мес</small></div>
+            <div class="plan__period">или 990 ₽ при оплате по месяцам</div>
+            <ul class="plan__features">
+              <li>Всё из тарифа Старт</li>
+              <li>Безлимитные заказы</li>
+              <li>Онлайн-предоплата</li>
+              <li>Автонапоминания и шаблоны</li>
+              <li>Галереи на 100 ГБ</li>
+              <li>Защита паролем и водяные знаки</li>
+              <li>Распознавание лиц</li>
+              <li>Свой домен</li>
+              <li>Аналитика бизнеса</li>
+            </ul>
+            <a href="login.html#register" class="btn btn--primary">Попробовать Pro</a>
+          </div>
+
+          <div class="plan plan--dark reveal reveal--d2">
+            <div class="plan__name">Studio</div>
+            <p class="plan__desc">Максимальный пакет для студий и команд.</p>
+            <div class="plan__price">1 990 ₽ <small>/ мес</small></div>
+            <div class="plan__period">или 2 490 ₽ при оплате по месяцам</div>
+            <ul class="plan__features">
+              <li>Всё из тарифа Pro</li>
+              <li>Конструктор сайтов из 100+ блоков</li>
+              <li>Безлимитное количество страниц</li>
+              <li>Галереи на 300 ГБ</li>
+              <li>Командная работа и роли</li>
+              <li>Несколько календарей</li>
+              <li>Брендированная страница записи</li>
+              <li>Продвижение в Яндекс и Google</li>
+              <li>Персональный блог</li>
+              <li>Приоритетная поддержка</li>
+            </ul>
+            <a href="login.html#register" class="btn btn--primary">Попробовать Studio</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-container reveal">
+          <div class="cta-content">
+            <h2>Начните принимать заказы уже сегодня</h2>
+            <p>Бесплатный тариф навсегда. Создайте сайт, настройте галерею и принимайте первые заказы за 5 минут.</p>
+            <a href="login.html#register" class="btn btn--primary">Начать бесплатно</a>
+          </div>
+          <div class="cta-visual">
+            <div class="cta-graphic">
+              <div class="cta-photo cta-photo-1">
+                <svg viewBox="0 0 200 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="200" height="260" fill="#2a2a2a"/>
+                  <circle cx="100" cy="100" r="40" fill="#4a4a4a"/>
+                  <path d="M50 200C50 170 70 150 100 150C130 150 150 170 150 200V260H50V200Z" fill="#4a4a4a"/>
+                  <circle cx="100" cy="100" r="70" fill="url(#grad1)" opacity="0.3"/>
+                  <defs>
+                    <radialGradient id="grad1" cx="0.5" cy="0.5" r="0.5" fx="0.5" fy="0.5">
+                      <stop offset="0%" stop-color="#7c1c2e" stop-opacity="0.8"/>
+                      <stop offset="100%" stop-color="#7c1c2e" stop-opacity="0"/>
+                    </radialGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="cta-photo cta-photo-2">
+                <svg viewBox="0 0 180 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="180" height="220" fill="#1a1a1a"/>
+                  <path d="M0 160L50 100L100 140L140 80L180 120V220H0V160Z" fill="#333333"/>
+                  <path d="M0 180L60 120L120 160L160 110L180 130V220H0V180Z" fill="#222222"/>
+                  <circle cx="140" cy="50" r="20" fill="#7c1c2e" opacity="0.6"/>
+                </svg>
+              </div>
+              <div class="cta-photo cta-photo-3">
+                <svg viewBox="0 0 160 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="160" height="200" fill="#111111"/>
+                  <circle cx="80" cy="100" r="60" stroke="#7c1c2e" stroke-width="2" opacity="0.4"/>
+                  <circle cx="80" cy="100" r="40" stroke="#7c1c2e" stroke-width="1" opacity="0.6"/>
+                  <circle cx="80" cy="100" r="20" fill="#7c1c2e" opacity="0.2"/>
+                </svg>
+              </div>
+              <div class="cta-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Готово к работе
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#top" class="logo">
+            <span class="logo__mark"></span>
+            <span>Contour</span>
+          </a>
+          <p style="color: rgba(255,255,255,0.6); font-size: 0.9rem; margin-top: 1rem;">Экосистема для фотографов: сайт, галереи, онлайн-запись и CRM в одном месте.</p>
+          <div class="footer__socials">
+            <a href="#" aria-label="Telegram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2.5L2.5 9.5L9.5 12.5L12.5 19.5L21.5 2.5Z"></path><path d="M9.5 12.5L21.5 2.5"></path><path d="M9.5 12.5L12.5 19.5"></path></svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="#" aria-label="ВКонтакте">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM17.5 15H15.5C14.5 15 14 14.5 13.5 13.5C13 12.5 12.5 12 12 12C11.5 12 11 12.5 10.5 13.5C10 14.5 9.5 15 8.5 15H6.5C5.5 15 5 14.5 5 13.5C5 12.5 5.5 11.5 6.5 10.5L8.5 8.5C9.5 7.5 10.5 7 11.5 7H12.5C13.5 7 14.5 7.5 15.5 8.5L17.5 10.5C18.5 11.5 19 12.5 19 13.5C19 14.5 18.5 15 17.5 15Z"/></svg>
+            </a>
+            <a href="#" aria-label="МАКС">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path><path d="M8 10h.01"></path><path d="M12 10h.01"></path><path d="M16 10h.01"></path></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Возможности</h4>
+          <ul>
+            <li><a href="#website">Сайт</a></li>
+            <li><a href="#gallery">Галереи</a></li>
+            <li><a href="#booking">Бронирование</a></li>
+            <li><a href="#calendar">Календарь</a></li>
+            <li><a href="#pricing">Тарифы</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Компания</h4>
+          <ul>
+            <li><a href="#">О проекте</a></li>
+            <li><a href="#">Блог</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Помощь</h4>
+          <ul>
+            <li><a href="#">О проекте</a></li>
+            <li><a href="#">Telegram</a></li>
+            <li><a href="#">ВКонтакте</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">МАКС</a></li>
+            <li><a href="#">Почта</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 Contour. Все права защищены.</span>
+        <div class="footer__legal">
+          <a href="#">Пользовательское соглашение</a>
+          <a href="#">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
