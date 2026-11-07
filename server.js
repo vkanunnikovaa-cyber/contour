@@ -39,7 +39,7 @@ passport.use(new LocalStrategy({ usernameField: 'email' }, async (email, passwor
 passport.use(new YandexStrategy({
     clientID: process.env.YANDEX_CLIENT_ID,
     clientSecret: process.env.YANDEX_CLIENT_SECRET,
-    callbackURL: "https://contour-41wv.onrender.com/"
+    callbackURL: "https://contour-41wv.onrender.com/auth/yandex/callback"
   },
   (accessToken, refreshToken, profile, done) => {
     let user = users.find(u => u.yandexId === profile.id);
